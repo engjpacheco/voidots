@@ -6,7 +6,7 @@
 # to clean up.
 
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:${$(find ~/.local/bin/ -type d -printf %p:)%%:}"
+export PATH="$PATH:${$(find ~/.dotfiles/home/.local/bin/ -type d -printf %p:)%%:}"
 
 unsetopt PROMPT_SP
 
@@ -154,10 +154,6 @@ ex=🎯:\
 
 # Start graphical server on user's current tty if not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx "$XINITRC"
-<<<<<<< HEAD
-
-=======
->>>>>>> 7c37b67 (add wallpapers)
 
 # Switch escape and caps if tty and no passwd required:
 sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
