@@ -1,0 +1,11 @@
+account jpachecom4@gmail.com
+host smtp.gmail.com
+port 587
+from jpachecom4@gmail.com
+user jpachecom4@gmail.com
+passwordeval "pass jpachecom4@gmail.com"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/javier/.config/msmtp/msmtp.log
+

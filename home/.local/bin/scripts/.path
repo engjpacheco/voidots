@@ -1,0 +1,11 @@
+/usr/local/sbin
+/usr/local/bin
+/usr/bin
+/usr/lib/jvm/default/bin
+/usr/bin/site_perl
+/usr/bin/vendor_perl
+/usr/bin/core_perl
+/home/javier/.local/bin
+/home/javier/.local/bin/scripts
+/home/javier/.local/bin/statusbar
+/home/javier/.local/bin/cron

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#Made By  Javier Pacheco....
+
+echo $(xclip -o)
+mpv $(xclip -o) || xclip -sel clip < /dev/null

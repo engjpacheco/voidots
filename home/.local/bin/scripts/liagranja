@@ -1,0 +1,7 @@
+#!/bin/sh
+
+
+#Reproduce videos para mi bebita hermosa!
+
+mpv --fullscreen --shuffle ~/vids/lia/ > /dev/null 2>&1
+# vlc --qt-minimal-view --random --fullscreen ~/vids/lia/*Granja* > /dev/null 2>&1

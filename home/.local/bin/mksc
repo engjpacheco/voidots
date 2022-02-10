@@ -1,0 +1,13 @@
+#!/bin/sh
+
+figlet -f miniwi Script | lolcat -a && figlet -f miniwi Maker | lolcat  &&
+
+
+	echo "Enter the name of the script: "
+	read script
+
+	dir=$(cat ~/.local/bin/scripts/.path | dmenu -p "Select the path: " -l 10 -c)
+
+	echo "#!/bin/sh" > $dir/$script &&
+		chmod +x $dir/$script &&
+		nvim $dir/$script

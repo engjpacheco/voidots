@@ -1,0 +1,17 @@
+ctrl + shift + k
+	kbmap
+
+alt + shift + w
+	setbg ~/pics/nord/
+
+alt + r
+	kill -HUP "$(pgrep -u "$USER" "\bdwm$")"
+
+super + KP_Enter
+	st
+
+super + shift + KP_Enter
+	freecad
+
+alt +t
+	st

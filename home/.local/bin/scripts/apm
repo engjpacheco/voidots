@@ -1,0 +1,6 @@
+#!/bin/sh
+
+runing=$(ps -e | grep NetworkManager)
+
+[[ -z "$runing" ]] && sudo sv restart NetworkManager & notify-send "Turning WIFI ON 📶" || sudo sv stop NetworkManager
+#[[ -z "$runing" ]] &&  || notify-send "Turning WIFI OFF 🆖"
